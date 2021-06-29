@@ -1,0 +1,26 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    username: digibahi@gmail.com
+    password: Qwerty@123
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  datasource:
+    username: sa
+    password: Qwerty@123
+    url: jdbc:sqlserver://localhost:1433;databaseName=Digi_Bahi
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        show_sql: true
+        format_sql: true
